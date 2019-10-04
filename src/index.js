@@ -1,10 +1,9 @@
 module.exports = function check(str, bracketsConfig) {
-  var openBreket1 = '(';
+    var openBreket1 = '(';
     var openBreket2 = '[';
     var closeBreket1 = ')';
     var closeBreket2 = ']';
-    var closOpenBreket3 = '|';
-    var closOpenBreket3 = "|"
+    var closOpenBreket3 = "|";
     var longBrekets = str.length;
     var calcBreket1 = 0;
     var calcBreket2 = 0;
@@ -37,5 +36,4 @@ module.exports = function check(str, bracketsConfig) {
         longBrekets--;
     }
     return (!(calcBreket1) && !(calcBreket1));
-}
 }
